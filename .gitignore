@@ -1,0 +1,7 @@
+auto-save-list
+*~
+*.elc
+network-security.data
+elpa
+elisp
+
