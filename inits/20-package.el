@@ -1,4 +1,4 @@
-;;; 20-package.el --- package                        -*- lexical-binding: t; -*-
+ ;;; 20-package.el --- package                        -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Shinsuke OTA
 

@@ -46,7 +46,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zenburn-theme color-theme madhat2r-theme smart-mode-line powerline atom-one-dark-theme company flycheck-popup-tip flycheck))))
+    (auctex helm magit zenburn-theme color-theme smart-mode-line company flycheck-popup-tip flycheck)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
