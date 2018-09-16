@@ -60,7 +60,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yatemplate yasnippet zenburn-theme yaml-mode smart-mode-line powerline markdown-mode magit madhat2r-theme helm flycheck-popup-tip company color-theme auctex-latexmk atom-one-dark-theme))))
+    (yasnippet-snippets helm-c-yasnippet yatemplate yasnippet zenburn-theme yaml-mode smart-mode-line powerline markdown-mode magit madhat2r-theme helm flycheck-popup-tip company color-theme auctex-latexmk atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -1,9 +1,9 @@
-;;; 99_last.el --- last initialization               -*- lexical-binding: t; -*-
+;;; 90_yasnippet.el --- init file for yasnippet      -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Shinsuke OTA
 
 ;; Author: Shinsuke OTA <ota@cns.s.u-tokyo.ac.jp>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -23,8 +23,15 @@
 ;; 
 
 ;;; Code:
+(yas-global-mode 1)
+;; companyと競合するのでyasnippetのフィールド移動は "C-i" のみにする
+(define-key yas-keymap (kbd "<tab>") nil)
+(setq yas-snippet-dirs
+      '((expand-file-name "~/.emacs.d/snippets")  ;; 自作スニペット
+        yas-installed-snippets-dir         ;; package に最初から含まれるスニペット
+        ))
+(yatemplate-fill-alist)
+(add-hook 'find-file-hooks 'auto-insert)
 
-(electric-pair-mode t)
-
-(provide '99_last)
-;;; 99_last.el ends here
+(provide '90_yasnippet)
+;;; 90_yasnippet.el ends here
