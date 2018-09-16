@@ -39,6 +39,20 @@
 
 (provide 'init)
 ;;; init.el ends here
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(package-selected-packages
+;;    (quote
+;;     (auctex helm magit zenburn-theme color-theme smart-mode-line company flycheck-popup-tip flycheck)))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -46,7 +60,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (auctex helm magit zenburn-theme color-theme smart-mode-line company flycheck-popup-tip flycheck)))
+    (yatemplate yasnippet zenburn-theme yaml-mode smart-mode-line powerline markdown-mode magit madhat2r-theme helm flycheck-popup-tip company color-theme auctex-latexmk atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
