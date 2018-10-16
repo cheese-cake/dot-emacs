@@ -24,6 +24,13 @@
 
 ;;; Code:
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq user-full-name "Shinsuke OTA")
 (setq user-mail-address "ota@cns.s.u-tokyo.ac.jp")
 
@@ -60,7 +67,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yasnippet-snippets helm-c-yasnippet yatemplate yasnippet zenburn-theme yaml-mode smart-mode-line powerline markdown-mode magit madhat2r-theme helm flycheck-popup-tip company color-theme auctex-latexmk atom-one-dark-theme))))
+    (buttercup flycheck auctex yasnippet-snippets helm-c-yasnippet yatemplate yasnippet zenburn-theme yaml-mode smart-mode-line powerline markdown-mode magit madhat2r-theme helm flycheck-popup-tip company color-theme auctex-latexmk atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

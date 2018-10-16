@@ -23,3 +23,11 @@
   (lambda ()
     (setq TeX-command-extra-options "-shell-escape")
   ))
+
+
+(add-hook 'LaTeX-mode-hook
+          '(lambda ()
+             (add-to-list 'TeX-command-list
+                          '("LatexMK-pLaTeX"
+                            "latexmk -e '$latex=q/platex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/pbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                            TeX-run-TeX nil (latex-mode) :help "Run LatexMK-pLaTeX"))))
