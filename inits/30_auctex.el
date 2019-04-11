@@ -26,7 +26,9 @@
   ))
 
 
-
+(setq TeX-electric-math (cons "$" "$"))
+(setq LaTeX-electric-left-right-brace t)
+(setq TeX-arg-right-insert-p nil)
 (add-hook 'LaTeX-mode-hook
           '(lambda ()
              (add-to-list 'TeX-command-list
