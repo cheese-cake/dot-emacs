@@ -27,7 +27,7 @@
 ;; companyと競合するのでyasnippetのフィールド移動は "C-i" のみにする
 (define-key yas-keymap (kbd "<tab>") nil)
 (setq yas-snippet-dirs
-      '((expand-file-name "~/.emacs.d/snippets")  ;; 自作スニペット
+      (list (expand-file-name "~/.emacs.d/snippets")  ;; 自作スニペット
         yas-installed-snippets-dir         ;; package に最初から含まれるスニペット
         ))
 (yatemplate-fill-alist)

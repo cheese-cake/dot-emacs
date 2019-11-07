@@ -31,6 +31,8 @@
   (setq c-default-style "k&r")
   (setq c-basic-offset 3 indent-tabs-mode nil))
 
+(setq auto-mode-alist (append '(("\\.h$" . c++-mode)) auto-mode-alist))
+
 (add-hook 'c-mode-common-hook 'c-mode-common-hooks)
 (add-hook 'c++-mode-hook 'c-mode-common-hooks)
 (provide '72_cpp)

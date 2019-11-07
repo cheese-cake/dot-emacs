@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: fileopen
+# key: fileopen
+# --
+TFile *${1:file} = TFile::Open(${2:filename});
+if (!$1) {
+   printf("Cannot open file %s",$2);
+   ${3:return;}
+}
+$0
