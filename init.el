@@ -63,6 +63,10 @@
     (leaf-keywords-init)))
 
 ;; ここにいっぱい設定を書く
+;; Start point of package setting
+(leaf term
+  :bind (("C-h" . 'delete-backward-char)
+         ("M-g" . 'goto-line)))
 
 
 (leaf cus-edit
@@ -118,9 +122,9 @@
   :bind (c-mode-base-map
          ("C-c c" . compile))
   :mode-hook
-  (c-mode-hook . ((c-set-style "bsd")
+  (c-mode-hook . ((c-set-style "k&r")
                   (setq c-basic-offset 3)))
-  (c++-mode-hook . ((c-set-style "bsd")
+  (c++-mode-hook . ((c-set-style "k&r")
                     (setq c-basic-offset 3))))
 
 (leaf delsel
